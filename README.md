@@ -18,3 +18,7 @@ cp -r skills/<skill-name> ~/.claude/skills/<skill-name>
 ```
 
 Then restart Claude Code. The skill will be available as a slash command.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add new skills.
