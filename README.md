@@ -9,6 +9,11 @@ A collection of reusable [Claude Code](https://claude.com/claude-code) skills fo
 |-------|-------------|-------|
 | [website-update](skills/website-update/) | Update content on milvus.io or zilliz.com — copy, images, CTAs, cards, nav, footer — then auto-create a PR | `/website-update` |
 
+### Content Creation
+| Skill | Description | Usage |
+|-------|-------------|-------|
+| [techblog-review](skills/techblog-review/) | Review and rewrite translated tech blog posts for the Zilliz developer blog — extract images, rewrite prose, add SEO/GEO metadata | `/techblog-review` |
+
 ## How to Install
 
 Copy the skill folder into your Claude Code skills directory:
