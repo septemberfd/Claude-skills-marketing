@@ -57,6 +57,7 @@
 ## 重要规则
 
 - **Milvus 品牌规范**：在 "What makes this customer success story unique? 30 second pitch" 和 "Quantify the business outcome or impact" 这两个字段中，不允许单独出现 "Milvus"。必须替换为 "Zilliz Cloud (fully managed Milvus)"。即使客户案例原文中使用的是 "Milvus"，也需要替换。原因：表单提交给 AWS，需要体现 Zilliz Cloud 产品。
+- **禁止使用 `<br>` 换行符**："Quantify the business outcome or impact" 字段中的 bullet points 直接用换行分隔，不要使用 `<br>` 标签。
 
 ## 输出模板
 
