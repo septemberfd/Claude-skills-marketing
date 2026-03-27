@@ -1,29 +1,39 @@
 # Claude Skills - Marketing
 
-A collection of reusable [Claude Code](https://claude.com/claude-code) skills for marketing and content operations.
+面向市场营销和内容运营的 [Claude Code](https://claude.com/claude-code) 可复用 Skill 合集。
 
-## Skills
+## Skills 列表
 
-### Website Content Management
-| Skill | Description | Usage |
-|-------|-------------|-------|
-| [website-update](skills/website-update/) | Update content on milvus.io or zilliz.com — copy, images, CTAs, cards, nav, footer — then auto-create a PR | `/website-update` |
+### 网站内容管理
+| Skill | 描述 | 用法 |
+|-------|------|------|
+| [website-update](skills/website-update/) | 更新 milvus.io 或 zilliz.com 上的内容（文案、图片、CTA、卡片、导航栏、页脚等），并自动创建 PR | `/website-update` |
 
-### Content Creation
-| Skill | Description | Usage |
-|-------|-------------|-------|
-| [techblog-review](skills/techblog-review/) | Review and rewrite translated tech blog posts for the Zilliz developer blog — extract images, rewrite prose, add SEO/GEO metadata | `/techblog-review` |
+### 内容创作
+| Skill | 描述 | 用法 |
+|-------|------|------|
+| [techblog-review](skills/techblog-review/) | 审校和改写 Zilliz 开发者博客的翻译技术文章 — 提取图片、改写正文、添加 SEO/GEO 元数据 | `/techblog-review` |
 
-## How to Install
+### 合作伙伴运营
+| Skill | 描述 | 用法 |
+|-------|------|------|
+| [aws-smartsheet](skills/aws-smartsheet/) | 根据 Zilliz 客户案例网页链接，自动生成 AWS Partner AI Customer Success Smartsheet 表单的 markdown 文档 | `/aws-smartsheet <客户案例链接>` |
 
-Copy the skill folder into your Claude Code skills directory:
+## 安装方法
 
-```bash
-cp -r skills/<skill-name> ~/.claude/skills/<skill-name>
-```
+1. 从对应的 skill 文件夹中下载 skill 文件（例如 `skills/aws-smartsheet/aws-smartsheet.md`）
 
-Then restart Claude Code. The skill will be available as a slash command.
+2. 将文件复制到 Claude Code 的 commands 目录：
+   ```bash
+   mkdir -p ~/.claude/commands
+   cp aws-smartsheet.md ~/.claude/commands/
+   ```
 
-## Contributing
+3. 重启 Claude Code，即可通过斜杠命令使用：
+   ```
+   /aws-smartsheet https://zilliz.com/customers/filevine
+   ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add new skills.
+## 贡献指南
+
+请参阅 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何添加新的 skill。
